@@ -1,0 +1,26 @@
+{
+    "name": "ecommerce-backend",
+    "version": "1.0.0",
+    "description": "Back-End para aplicación de comercio electrónico",
+    "main": "app.js",
+    "scripts": {
+        "start": "node app.js",
+        "dev": "nodemon app.js"
+    },
+    "dependencies": {
+        "bcrypt": "^5.0.1",
+        "cookie-parser": "^1.4.7",
+        "cors": "^2.8.5",
+        "csurf": "^1.11.0",
+        "dotenv": "^10.0.0",
+        "express": "^4.17.1",
+        "express-validator": "^6.14.0",
+        "helmet": "^5.0.2",
+        "jsonwebtoken": "^8.5.1",
+        "mysql2": "^3.3.3",
+        "sequelize": "^6.6.5"
+    },
+    "devDependencies": {
+        "nodemon": "^2.0.12"
+    }
+}
