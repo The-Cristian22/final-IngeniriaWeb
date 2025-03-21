@@ -1,4 +1,4 @@
-// src/components/LazyImage.jsx
+
 import React, { useState, useEffect, useRef } from 'react';
 
 const LazyImage = ({ src, alt, ...rest }) => {

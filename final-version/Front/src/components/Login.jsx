@@ -1,4 +1,4 @@
-// src/components/Login.jsx
+
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { login } from '../services/api';
@@ -18,7 +18,6 @@ const Login = ({ onLogin }) => {
             if (token) {
                 localStorage.setItem('token', token);
                 onLogin(token);
-                // Redirige a la ruta principal
                 navigate('/');
             } else {
                 console.error("handleSubmit: No se recibió token");

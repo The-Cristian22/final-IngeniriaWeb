@@ -1,5 +1,4 @@
-// controllers/cartController.js
-// Simulación de carrito en memoria
+
 let cart = {};
 
 exports.addToCart = (req, res, next) => {

@@ -1,7 +1,7 @@
-// src/services/api.js
+
 import axios from 'axios';
 
-const API_URL = 'http://localhost:4000/api'; // Asegúrate de que el puerto y dominio sean correctos
+const API_URL = 'http://localhost:4000/api';
 
 export const getProducts = async () => {
     try {
@@ -23,7 +23,6 @@ export const login = async (email, password) => {
     }
 };
 
-// Función para obtener el token CSRF
 const getCsrfToken = async (token) => {
     const response = await axios.get(`${API_URL}/csrf-token`, {
         headers: { Authorization: `Bearer ${token}` },
@@ -53,4 +52,3 @@ export const addToCart = async (token, productId, quantity) => {
     }
 };
 
-// De forma similar, si implementas getCart o removeFromCart, deberás incluir el token CSRF

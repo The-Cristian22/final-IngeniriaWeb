@@ -10,10 +10,8 @@ import './styles/main.css';
 
 const App = () => {
     const [token, setToken] = useState(localStorage.getItem('token') || '');
-    // Estado para forzar el refresco del carrito
     const [cartUpdate, setCartUpdate] = useState(0);
 
-    // Función para actualizar el carrito
     const handleCartUpdate = () => {
         setCartUpdate(prev => prev + 1);
     };
@@ -23,9 +21,7 @@ const App = () => {
             <div className="app">
                 <Header />
                 <Routes>
-                    {/* Ruta pública de login */}
                     <Route path="/login" element={<Login onLogin={setToken} />} />
-                    {/* Rutas protegidas */}
                     <Route element={<ProtectedRoute token={token} />}>
                         <Route
                             path="/"
@@ -36,7 +32,6 @@ const App = () => {
                             element={<Cart token={token} cartUpdate={cartUpdate} />}
                         />
                     </Route>
-                    {/* Redireccionar a login para cualquier otra ruta */}
                     <Route path="*" element={<Login onLogin={setToken} />} />
                 </Routes>
             </div>

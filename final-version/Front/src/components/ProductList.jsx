@@ -1,4 +1,4 @@
-// src/components/ProductList.jsx
+
 import React, { useEffect, useState } from 'react';
 import { getProducts, addToCart } from '../services/api';
 import ProductCard from './ProductCard';
@@ -22,7 +22,6 @@ const ProductList = ({ token, onCartUpdate }) => {
         try {
             await addToCart(token, productId, 1);
             alert('Producto agregado al carrito');
-            // Llama a la función para refrescar el carrito
             onCartUpdate();
         } catch (error) {
             console.error("Error al agregar producto al carrito", error);

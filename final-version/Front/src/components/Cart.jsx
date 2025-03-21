@@ -1,4 +1,3 @@
-// src/components/Cart.jsx
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 
@@ -19,7 +18,7 @@ const Cart = ({ token, cartUpdate }) => {
 
     useEffect(() => {
         fetchCart();
-    }, [token, cartUpdate]); // Se vuelve a ejecutar cuando cartUpdate cambia
+    }, [token, cartUpdate]);
 
     return (
         <div className="cart">

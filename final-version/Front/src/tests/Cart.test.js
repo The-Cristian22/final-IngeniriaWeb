@@ -1,4 +1,4 @@
-// src/tests/Cart.test.js
+
 import React from 'react';
 import { render, screen, waitFor } from '@testing-library/react';
 import Cart from '../components/Cart';

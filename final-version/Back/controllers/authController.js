@@ -1,4 +1,4 @@
-// controllers/authController.js
+
 const { validationResult } = require('express-validator');
 const jwt = require('jsonwebtoken');
 const bcrypt = require('bcrypt');

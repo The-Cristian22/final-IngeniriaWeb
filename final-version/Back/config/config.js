@@ -10,6 +10,5 @@ module.exports = {
         dialect: process.env.DB_DIALECT
     },
     production: {
-        // Configuración para producción
     }
 };
